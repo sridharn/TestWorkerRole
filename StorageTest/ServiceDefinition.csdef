@@ -3,8 +3,6 @@
   <WorkerRole name="WorkerRole1" vmsize="Large">
     <Imports>
       <Import moduleName="Diagnostics" />
-      <Import moduleName="RemoteAccess" />
-      <Import moduleName="RemoteForwarder" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="StorageAccount" />

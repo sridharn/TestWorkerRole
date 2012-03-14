@@ -5,16 +5,8 @@
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="StorageAccount" value="UseDevelopmentStorage=true" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="azure10gen" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECdWHyUQ6viZQtNCO4YUdBEwDQYJKoZIhvcNAQEBBQAEggEAjWjTizWB4a0v6wB7wz2JTvNZG36JJvHBK/sqO9hKDl1zvfDdNdi/m4qWHzrvOiUqvilDf+y0AgT/WGZQ51OmC7c89bA/HJy2z92j62reDYsgmdgubXhZKbxdQmq5Pu0/nl/0WueKn8YK+gORVcj/dC2xOndP9e6XYCE00TVAbhFDUQwbZyKE7pR+X7P49PZP+DCTEpidF43nbt/drYT6ABF59pwFGOnnzK0KgH4sis2B5uWLv0GdJiWey9SPewXeBkf77yE7VBn8iJl4XAOh/NydVtOailksgrc636Eq/iBFhAPuOe67GsxMveNzM5P5VHQw/2ned6sWpuYE/NTVmDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECDc4z5cvG7WqgBAL3xo8dOVl26voLb17uYwb" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-03-05T23:59:59.0000000-08:00" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
       <Setting name="NoOfDrives" value="2" />
       <Setting name="DriveSizeInGB" value="5" />
     </ConfigurationSettings>
-    <Certificates>
-      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="30D89CF3E55AA54AF150791535FAE620B0AAB73A" thumbprintAlgorithm="sha1" />
-    </Certificates>
   </Role>
 </ServiceConfiguration>
