@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "StorageTest", "StorageTest\StorageTest.ccproj", "{2CC0B039-D3EC-40AC-8722-77BA7D006DA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole1", "WorkerRole1\WorkerRole1.csproj", "{6133E3E6-1108-415F-A6AB-6E0410DF0EFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CC0B039-D3EC-40AC-8722-77BA7D006DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC0B039-D3EC-40AC-8722-77BA7D006DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC0B039-D3EC-40AC-8722-77BA7D006DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC0B039-D3EC-40AC-8722-77BA7D006DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6133E3E6-1108-415F-A6AB-6E0410DF0EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6133E3E6-1108-415F-A6AB-6E0410DF0EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6133E3E6-1108-415F-A6AB-6E0410DF0EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6133E3E6-1108-415F-A6AB-6E0410DF0EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+*.suo
+*.user
+obj
+bin
+ServiceDefinition.build.csdef
+ServiceConfiguration.Cloud.cscfg
+csx
+*.cer
+*.pfx
+Binaries.7z

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="StorageTest" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WorkerRole name="WorkerRole1" vmsize="Large">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="StorageAccount" />
+      <Setting name="NoOfDrives" />
+      <Setting name="DriveSizeInGB" />
+    </ConfigurationSettings>
+    <LocalResources>
+      <LocalStorage name="LocalStorage0" cleanOnRoleRecycle="false" sizeInMB="100000" />
+      <LocalStorage name="LocalStorage1" cleanOnRoleRecycle="false" sizeInMB="100000" />
+    </LocalResources>
+    <Endpoints>
+      <InputEndpoint name="ExternalEndPoint" protocol="tcp" port="29000" />
+      <InternalEndpoint name="InternalEndPoint" protocol="tcp" port="28000" />
+    </Endpoints>
+  </WorkerRole>
+</ServiceDefinition>

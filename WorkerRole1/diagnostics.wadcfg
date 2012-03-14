@@ -1,0 +1,33 @@
+<DiagnosticMonitorConfiguration xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration" configurationChangePollInterval="PT1M" overallQuotaInMB="4096">
+   <DiagnosticInfrastructureLogs bufferQuotaInMB="10"
+      scheduledTransferLogLevelFilter="Error"
+      scheduledTransferPeriod="PT1M" />
+
+   <Logs bufferQuotaInMB="0"
+      scheduledTransferLogLevelFilter="Verbose"
+      scheduledTransferPeriod="PT1M" />
+
+   <Directories bufferQuotaInMB="0" 
+      scheduledTransferPeriod="PT5M">
+   
+      <!-- These three elements specify the special directories 
+           that are set up for the log types -->
+      <CrashDumps container="wad-crash-dumps" directoryQuotaInMB="256" />
+      <FailedRequestLogs container="wad-frq" directoryQuotaInMB="256" />
+      <IISLogs container="wad-iis" directoryQuotaInMB="256" />
+
+     <DataSources>
+       <DirectoryConfiguration container="wad-custom" directoryQuotaInMB="1024">
+         <LocalResource name="MongodLogDir" relativePath="." />
+       </DirectoryConfiguration>
+     </DataSources>
+   </Directories>
+
+   <WindowsEventLog bufferQuotaInMB="0"
+      scheduledTransferLogLevelFilter="Verbose"
+      scheduledTransferPeriod="PT5M">
+      <!-- The event log name is in the same format as the imperative 
+           diagnostics configuration API -->
+      <DataSource name="System!*" />
+   </WindowsEventLog>
+</DiagnosticMonitorConfiguration>
